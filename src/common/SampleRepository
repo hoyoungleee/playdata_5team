@@ -1,7 +1,5 @@
-package repository.sample;
+package common;
 
-import jdbc.DBConnectionManager;
-import samplePackage.sample.Sample;
 
 import java.sql.*;
 import java.util.ArrayList;
