@@ -1,6 +1,6 @@
 package entity;
 
-public class Doctor_tb {
+public class Doctor {
     private int doc_id;
     private String doc_name;
     private String password;
@@ -8,6 +8,16 @@ public class Doctor_tb {
     private String doc_birth;
     private String active;
     private Department department;
+
+    public Doctor(String doc_name, String password, String phone_number, String doc_birth, String active, Department department, int doc_id) {
+        this.doc_name = doc_name;
+        this.password = password;
+        this.phone_number = phone_number;
+        this.doc_birth = doc_birth;
+        this.active = active;
+        this.department = department;
+        this.doc_id = doc_id;
+    }
 
     public int getDoc_id() {
         return doc_id;

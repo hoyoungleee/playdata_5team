@@ -1,7 +1,20 @@
 package entity;
 
-public class Patient_tb {
+public class Patient {
+
+    private String password;
+    private String user_name;
+    private String phone_number;
+    private String active;
     private int  user_id;
+
+    public Patient(String user_name, String phone_number, String active, String password, int user_id) {
+        this.user_name = user_name;
+        this.phone_number = phone_number;
+        this.active = active;
+        this.password = password;
+        this.user_id = user_id;
+    }
 
     public int getUser_id() {
         return user_id;
@@ -11,10 +24,6 @@ public class Patient_tb {
         this.user_id = user_id;
     }
 
-    private String password;
-    private String user_name;
-    private String phone_number;
-    private String active;
 
     public String getPassword() {
         return password;

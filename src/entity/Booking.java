@@ -2,14 +2,36 @@ package entity;
 
 import java.time.LocalDate;
 
-public class Booking_tb {
+public class Booking {
     private int booking_id;
     private int user_id;
     private String doc_id;
-    private String Content;
+    private String content;
     private LocalDate date;
     private String status;
+    private Boolean isCanceled;
 
+
+
+    public Booking(int bookingId, int userId, String docId, String content, LocalDate date, String status, Boolean isCanceled) {
+        this.booking_id = booking_id;
+        this.user_id = user_id;
+        this.doc_id = doc_id;
+        this.content = content;
+        this.date = date;
+        this.status = status;
+        this.isCanceled = isCanceled;
+    }
+
+    public Boolean getCanceled() {
+        return isCanceled;
+    }
+
+    public void setCanceled(Boolean canceled) {
+        this.isCanceled = canceled;
+    }
+
+     //
     public int getBooking_id() {
         return booking_id;
     }
@@ -35,11 +57,11 @@ public class Booking_tb {
     }
 
     public String getContent() {
-        return Content;
+        return content;
     }
 
     public void setContent(String content) {
-        Content = content;
+        this.content = content;
     }
 
     public LocalDate getDate() {
