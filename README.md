@@ -9,3 +9,10 @@ CREATE USER hsp_usr IDENTIFIED BY 1234;
 GRANT CREATE SESSION TO hsp_usr;
 GRANT RESOURCE, DBA TO hsp_usr;
 ```
+
+# 의사 부서 설명
+
+Orthopedics - 정형외과
+Ophthalmology - 안과
+Internal Medicine - 내과
+Plastic Surgery - 성형외과
