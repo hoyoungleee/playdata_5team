@@ -9,7 +9,7 @@ public class Booking {
     private String content;
     private LocalDate date;
     private String status;
-    private Boolean isCanceled;
+
 
 
 
@@ -20,16 +20,10 @@ public class Booking {
         this.content = content;
         this.date = date;
         this.status = status;
-        this.isCanceled = isCanceled;
+
     }
 
-    public Boolean getCanceled() {
-        return isCanceled;
-    }
 
-    public void setCanceled(Boolean canceled) {
-        this.isCanceled = canceled;
-    }
 
      //
     public int getBooking_id() {
